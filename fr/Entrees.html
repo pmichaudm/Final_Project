@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Group 6">
+    <meta name="description" content = "Page des entrées">
+    <link rel="icon" href="../assets/logos/sushi.ico" type="image/x-icon">
+    <title>Entrées</title>
+    <link rel = "stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+
+    <nav class="nav">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="logo">Rolls for Days</div>
+        <ul class="nav-menu">
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Combos.html">Combos</a></li>
+            <li><a href="Faits.html">Faits</a></li>
+            <li><a href="Contact.html">Nous joindre</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <div class="menu-nav">
+            <ul>
+                <li><a href="Entrees.html">Entrées</a></li>
+                <li><a href="Rouleaux.html">Rouleaux</a></li>
+                <li><a href="Nigiri.html">Nigiri</a></li>
+                <li><a href="Desserts.html">Desserts</a></li>
+            </ul>
+        </div>
+        <section class="menu-section">
+            <h1>Entrées</h1>
+            <div class="menu-items">
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Apéritifs_Appetizers/Edamame.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Edamame</h3>
+                        <p>Graines de soja</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Apéritifs_Appetizers/SaladeWakame_WakameSalade.png" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Salade Wakame</h3>
+                        <p>Salade d'algues, carottes, papaye verte, coriandre, sauce ponzu</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Apéritifs_Appetizers/SaumonAvecPonzuTataki_SalmonWithPonzuTataki.png" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Saumon avec Ponzu Tataki</h3>
+                        <p>5 pièces avec sauce ponzu</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Apéritifs_Appetizers/SoupeMiso_MisoSoup.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Soupe Miso</h3>
+                        <p>Pâte miso, protéine, onions verts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h3>Suivez nous:</h3>
+
+        <div id="socials">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div id="other-language">
+            <a href="../en/Home.html">English</a>
+        </div>
+        <small>&copy; Copyright 2023 Rolls For Days</small>
+    </footer>
+    <script>
+        const toggleButton = document.getElementsByClassName('menu-toggle')[0]
+        const navLinks = document.getElementsByClassName('nav-menu')[0]
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

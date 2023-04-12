@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Group 6">
+    <meta name="description" content = "Home Page">
+    <link rel="icon" href="../assets/logos/sushi.ico" type="image/x-icon">
+    <title>Rolls for Days</title>
+    <link rel = "stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+
+    <nav class="nav">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="logo">Rolls for Days</div>
+        <ul class="nav-menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Combos.html">Combos</a></li>
+            <li><a href="Facts.html">Sushi Facts</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <section class="about">
+        <div class="about-container">
+<!--            <img class="" src="../assets/images/sushi-pic2.jpg" alt="">-->
+            <img class="" src="../assets/images/sushi-chef3.jpg" alt="">
+            <div class="box-wrapper">
+                <div class="info-box" id="box-1">
+                    <h1>ABOUT US</h1>
+                    <p>With our restaurant continuously prospering, we are now offering combo meals for small (or large!) groups to enjoy together. Enjoy a diverse and savoury meal and choose from a selection of combos for everyone to try!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae cum eaque eius error hic ipsam ipsum maiores maxime minus, mollitia nisi non numquam placeat, quae similique tempora veniam?</span><span>Dolorem esse hic laudantium qui sapiente, similique voluptatum. Accusantium, ad aliquam at dolor dolores enim est explicabo harum impedit, ipsam modi nam quidem quos reiciendis repellendus repudiandae sapiente sit temporibus?</p>
+                </div>
+                <div class="info-box" id="box-2">
+                    <h1>WHAT'S NEW</h1>
+                    <p>With our restaurant continuously prospering, we are now offering combo meals for small (or large!) groups to enjoy together. Enjoy a diverse and savoury meal and choose from a selection of combos for everyone to try!</p>
+                    <p>Our chefs are always experimenting with new recipes for rolls that will satisfy every person’s preferences. Be sure to stay tuned for future updates and new additions to the menu! Have suggestions? Feel free to forward your ideas over to your server, one of the chefs, or send us an email with your thoughts!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>Follow Us:</h3>
+
+        <div id="socials">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div id="other-language">
+            <a href="../fr/Accueil.html">Français</a>
+        </div>
+        <small>&copy; Copyright 2023 Rolls For Days</small>
+    </footer>
+    <script>
+        const toggleButton = document.getElementsByClassName('menu-toggle')[0]
+        const navLinks = document.getElementsByClassName('nav-menu')[0]
+        toggleButton.addEventListener('click', () => {
+           navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

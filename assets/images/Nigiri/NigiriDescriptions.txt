@@ -1,0 +1,34 @@
+Ebi/Ebi
+
+Decription: crevette
+
+Decription:  shrimp
+
+
+Ikura/Ikura
+
+Description:  Œufs de saumon
+
+Description:  Salmon eggs
+
+
+Saumon/Salmon
+
+Description:  Saumon
+
+Description:  Salmon
+
+
+Unagi/Unagi
+
+Description:  Anguille
+
+Description:  Eel
+
+
+Wagyu/Wagyu
+
+Description: Boeuf Wagyu de Miyazaki, Japon
+
+Description:  Wagyu beef from Miyazaki, Japan
+

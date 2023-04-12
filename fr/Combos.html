@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Group 6">
+    <meta name="description" content = "Page Combos">
+    <link rel="icon" href="../assets/logos/sushi.ico" type="image/x-icon">
+    <title>Combos</title>
+    <link rel = "stylesheet" href="../css/style.css">
+    <link rel = "stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+
+    <nav class="nav">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="logo">Rolls for Days</div>
+        <ul class="nav-menu">
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Combos.html">Combos</a></li>
+            <li><a href="Faits.html">Faits</a></li>
+            <li><a href="Contact.html">Nous joindre</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <section class="menu-section">
+            <h1>Nos combos</h1>
+            <div class="menu-items">
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Combos/NigiriAndMakiRollCombo.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Combo Nigiri et Rouleau</h3>
+                        <p>10 nigiri et 1 rouleau</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Combos/Nigiri6Piece.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Combo Nigiri 6</h3>
+                        <p>6 morceaux de nigiri</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Combos/NigiriCombo10pieces.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Combo Nigiri 10</h3>
+                        <p>10 morceaux de nigiri</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section">
+            <h1>Service de traiteur</h1>
+            <p class="menu-text">Pour votre occasion spéciale, nous pouvons vous offrir un service de traiteur. Nos services vont d'un service de base jusqu'au service complet avec serveurs. Tous les items du menu sont disponibles pour vous.</p>
+            <ol id="event-types">
+                <li>Mariages</li>
+                <li>Anniversaires</li>
+                <li>Évènements corporatifs</li>
+                <li>L'expérience "Sushi à la maison"</li>
+            </ol>
+            <p class="menu-text">Pour en apprendre plus sur l'expériences, les services, prix et disponibilités, contactez-nous!</p>
+            <a id="contact-button" href="Contact.html">Nous joindre</a>
+        </section>
+    </div>
+    <footer>
+        <h3>Suivez nous:</h3>
+
+        <div id="socials">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div id="other-language">
+            <a href="../en/Home.html">English</a>
+        </div>
+        <small>&copy; Copyright 2023 Rolls For Days</small>
+    </footer>
+    <script>
+        const toggleButton = document.getElementsByClassName('menu-toggle')[0]
+        const navLinks = document.getElementsByClassName('nav-menu')[0]
+        toggleButton.addEventListener('click', () => {
+           navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

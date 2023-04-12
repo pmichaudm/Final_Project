@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Group 6">
+    <meta name="description" content = "Menu Page">
+    <link rel="icon" href="../assets/logos/sushi.ico" type="image/x-icon">
+    <title>Our menu</title>
+    <link rel = "stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+
+    <nav class="nav">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="logo">Rolls for Days</div>
+        <ul class="nav-menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Combos.html">Combos</a></li>
+            <li><a href="Facts.html">Sushi Facts</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <section class="menu">
+
+        <div class="menu-section">
+            <h1>Menu</h1>
+            <div class="menu-category">
+                <a href="Appetizers.html" class="menu-category-card">
+                    <div class="menu-category-image">
+                        <img src="../assets/images/Apéritifs_Appetizers/SoupeMiso_MisoSoup.jpg" alt="">
+                    </div>
+                    <div class="menu-category-text">
+                        <h1>Appetizers</h1>
+                    </div>
+                </a>
+                <a href="Rolls.html" class="menu-category-card">
+                    <div class="menu-category-image">
+                        <img src="../assets/images/MakiSignatures/RouleauUnagi.jpg" alt="">
+                    </div>
+                    <div class="menu-category-text">
+                        <h1>Rolls (for days)</h1>
+                    </div>
+                </a>
+
+                <a href="Nigiri.html" class="menu-category-card">
+                    <div class="menu-category-image">
+                        <img src="../assets/images/Nigiri/EbiNigiri.jpg" alt="">
+                    </div>
+                    <div class="menu-category-text">
+                        <h1>Nigiri</h1>
+                    </div>
+                </a>
+
+                <a href="Desserts.html" class="menu-category-card">
+                    <div class="menu-category-image">
+                        <img src="../assets/images/Desserts/MatchaIcecream.jpg" alt="">
+                    </div>
+                    <div class="menu-category-text">
+                        <h1>Desserts</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>Follow Us:</h3>
+
+        <div id="socials">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div id="other-language">
+            <a href="../fr/Accueil.html">Français</a>
+        </div>
+        <small>&copy; Copyright 2023 Rolls For Days</small>
+    </footer>
+    <script>
+        const toggleButton = document.getElementsByClassName('menu-toggle')[0]
+        const navLinks = document.getElementsByClassName('nav-menu')[0]
+        toggleButton.addEventListener('click', () => {
+           navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

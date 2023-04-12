@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Group 6">
+    <meta name="description" content = "Combos Page">
+    <link rel="icon" href="../assets/logos/sushi.ico" type="image/x-icon">
+    <title>Combos</title>
+    <link rel = "stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+
+    <nav class="nav">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="logo">Rolls for Days</div>
+        <ul class="nav-menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Combos.html">Combos</a></li>
+            <li><a href="Facts.html">Sushi Facts</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <section class="menu-section">
+            <h1>Our combos</h1>
+            <div class="menu-items">
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Combos/NigiriAndMakiRollCombo.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Nigiri and Roll Combo</h3>
+                        <p>10 nigiri and 1 roll</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Combos/Nigiri6Piece.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Nigiri Combo 6</h3>
+                        <p>6 pieces of nigiri</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Combos/NigiriCombo10pieces.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Nigiri Combo 10</h3>
+                        <p>10 pieces of nigiri</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section">
+            <h1>Catering</h1>
+            <p class="menu-text">For a special event, we offer catering services to our customers. Our services range from partial to complete with waiters. All of our menu items are available to be added for your liking, from appetizers to dessert.</p>
+            <ol id="event-types">
+                <li>Weddings</li>
+                <li>Birthdays</li>
+                <li>Corporate events</li>
+                <li>Sushi at home experience</li>
+            </ol>
+            <p class="menu-text">To learn more about the experience, pricing and available dates, please contact us directly and we will provide you with more information.</p>
+            <a id="contact-button" href="Contact.html">Contact Us</a>
+        </section>
+    </div>
+    <footer>
+        <h3>Follow Us:</h3>
+
+        <div id="socials">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div id="other-language">
+            <a href="../fr/Accueil.html">Français</a>
+        </div>
+        <small>&copy; Copyright 2023 Rolls For Days</small>
+    </footer>
+    <script>
+        const toggleButton = document.getElementsByClassName('menu-toggle')[0]
+        const navLinks = document.getElementsByClassName('nav-menu')[0]
+        toggleButton.addEventListener('click', () => {
+           navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

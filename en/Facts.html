@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Group 6">
+    <meta name="description" content = "Facts Page">
+    <link rel="icon" href="../assets/logos/sushi.ico" type="image/x-icon">
+    <title>Sushi Facts</title>
+    <link rel = "stylesheet" href="../css/style.css">
+    <link rel = "stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+
+    <nav class="nav">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="logo">Rolls for Days</div>
+        <ul class="nav-menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Combos.html">Combos</a></li>
+            <li><a href="Facts.html">Sushi Facts</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+
+        <section class="sushi-facts">
+            <h1>Sushi Facts</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../assets/images/SushiFactsPics/1.jpg" alt="">
+                        <div class="slide-text">
+                            <p>Sushi dates as far back as 2nd Century BC in China, which was known as a dish called “narezushi”. Sushi that we are more familiar with today was originally a method to preserve fish in China in order to store fish for extended periods withou refrigeration. Japanese people started eating the preserved raw fish as is, much to the initial confusion from Chinese people.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/SushiFactsPics/2.jpg" alt="">
+                        <div class="slide-text">
+                            <p>In the beginning, sushi was eaten by hand, although nowadays there is no incorrect way to eat it, whether it be by hand, chopsticks - or even with a spoon!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/SushiFactsPics/3.jpg" alt="">
+                        <div class="slide-text">
+                            <p>At first, it was unheard of in Japan to eat raw salmon, however when Norwegians came up with the concept of salmon sushi and assuring that Atlantic salmon was safe to eat raw in comparison to Pacific salmon, Japan started integrating raw salmon with their sushi. Because of this, most salmon sushi comes from fish that are raised on farms rather than in the wild.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/SushiFactsPics/4.jpg" alt="">
+                        <div class="slide-text">
+                            <p>In order to kill parasites before consumption, all fish that is to be eaten raw must be frozen prior to consumption</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/SushiFactsPics/5.jpg" alt="">
+                        <div class="slide-text">
+                            <p>The highest price ever paid for a sushi grade Bluefin Tuna was $396,000 for a 754 lbs. at the Tsukiji Fish Market in Tokyo on January 4th, 2011. </p>
+                        </div>
+                    </div>
+<!--                    <div class="swiper-slide">-->
+<!--                        <img src="../assets/images/SushiFactsPics/6.jpg" alt="">-->
+<!--                        <div class="slide-text">-->
+<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium corporis deleniti dolor ea eaque eius eligendi esse ex fugit harum magnam nemo, nihil nulla numquam, officia quam sequi veniam!</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h3>Follow Us:</h3>
+
+        <div id="socials">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div id="other-language">
+            <a href="../fr/Accueil.html">Français</a>
+        </div>
+        <small>&copy; Copyright 2023 Rolls For Days</small>
+    </footer>
+    <script>
+        const toggleButton = document.getElementsByClassName('menu-toggle')[0]
+        const navLinks = document.getElementsByClassName('nav-menu')[0]
+        toggleButton.addEventListener('click', () => {
+           navLinks.classList.toggle('active');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../scripts/Swiper.js"></script>
+</body>
+</html>

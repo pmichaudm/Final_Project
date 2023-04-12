@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Group 6">
+    <meta name="description" content = "Desserts Page">
+    <link rel="icon" href="../assets/logos/sushi.ico" type="image/x-icon">
+    <title>Desserts</title>
+    <link rel = "stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+
+    <nav class="nav">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="logo">Rolls for Days</div>
+        <ul class="nav-menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Combos.html">Combos</a></li>
+            <li><a href="Facts.html">Sushi Facts</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <div class="menu-nav">
+            <ul>
+                <li><a href="Appetizers.html">Appetizers</a></li>
+                <li><a href="Rolls.html">Rolls</a></li>
+                <li><a href="Nigiri.html">Nigiri</a></li>
+                <li><a href="Desserts.html">Desserts</a></li>
+            </ul>
+        </div>
+        <section class="menu-section">
+            <h1>Desserts</h1>
+            <div class="menu-items">
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Desserts/GâteauAuFromageMatcha_MatchaCheesecake.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Matcha Cheesecake</h3>
+                        <p>Gluten free nuts, Cream, Cream cheese, Milk, Egg, Butter, Sugar, Matcha, White chocolate, Corn starch, Gelatin</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Desserts/MatchaIcecream.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Matcha Ice Cream</h3>
+                        <p>Matcha, Milk, Cream, Sugar, Salt</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-image">
+                        <img src="../assets/images/Desserts/MochiIceCreamAssortment.jpg" alt="">
+                    </div>
+                    <div class="menu-item-text">
+                        <h3>Mochi Ice Cream</h3>
+                        <p>Rice flour, Sugar, Potato Starch, Ice Cream</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h3>Follow Us:</h3>
+
+        <div id="socials">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div id="other-language">
+            <a href="../fr/Accueil.html">Français</a>
+        </div>
+        <small>&copy; Copyright 2023 Rolls For Days</small>
+    </footer>
+    <script>
+        const toggleButton = document.getElementsByClassName('menu-toggle')[0]
+        const navLinks = document.getElementsByClassName('nav-menu')[0]
+        toggleButton.addEventListener('click', () => {
+           navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
