@@ -8,23 +8,23 @@
     <meta name="author" content="Group 6">
     <meta name="description" content = "Page des nigiri">
     <link rel="icon" href="../assets/logos/sushi.ico" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Nigiri</title>
     <link rel = "stylesheet" href="../css/style.css">
     <link rel = "stylesheet" href="../css/swiper.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
+    <script href="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
     </style>
 </head>
 <body>
     <script src="https://kit.fontawesome.com/8ac01e2bd6.js" crossorigin="anonymous"></script>
-
     <nav class="nav">
         <div class="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
-        <div id="logo">Rolls for Days</div>
+        <a id="logo" href="Accueil.html"><img src="../assets/logos/sushi.gif" alt=""><h1>Rolls For Days</h1></a>
         <ul class="nav-menu">
             <li><a href="Accueil.html">Accueil</a></li>
             <li><a href="Menu.html">Menu</a></li>
@@ -45,9 +45,9 @@
         <section class="menu-section">
             <h1>Nigiri</h1>
             <div class="menu-items">
-                <div class="menu-card">
+                <div class="menu-card" data-image="../assets/images/Nigiri/EbiNigiri.jpg">
                     <div class="menu-item-image">
-                        <img src="../assets/images/Nigiri/EbiNigiri.jpg" alt="">
+                        <img src="../assets/images/Nigiri/EbiNigiri.jpg" alt="" >
                     </div>
                     <div class="menu-item-text">
                         <h3>Ebi</h3>
@@ -93,6 +93,7 @@
             </div>
         </section>
     </div>
+
     <footer>
         <h3>Suivez nous:</h3>
 
@@ -105,6 +106,7 @@
         </div>
         <small>&copy; Copyright 2023 Rolls For Days</small>
     </footer>
+
     <script>
         const toggleButton = document.getElementsByClassName('menu-toggle')[0]
         const navLinks = document.getElementsByClassName('nav-menu')[0]
@@ -112,6 +114,6 @@
            navLinks.classList.toggle('active');
         });
     </script>
-    <script src="../scripts/Swiper.js"></script>
+    <script src="../scripts/Scripts.js"></script>
 </body>
 </html>

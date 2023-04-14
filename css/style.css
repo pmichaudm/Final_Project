@@ -28,6 +28,7 @@ body {
     position: fixed;
     z-index: 1000;
 }
+
 .menu-toggle {
     display: none;
 }
@@ -41,11 +42,27 @@ body {
 }
 
 .nav #logo {
-    color: rgba(239, 35, 60);
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+    height: 80px;
+    width: 300px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav #logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.nav #logo h1 {
     font-size: 25px;
     font-weight: bold;
-    margin-left: 20px;
-    cursor: pointer;
+    color: rgba(239, 35, 60);
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -58,6 +75,7 @@ body {
     background: rgba(238, 108, 77);
     transition: 0.2s ease-in-out;
 }
+
 .nav-menu li {
     padding: 0 50px;
     display: inline-block;
@@ -81,6 +99,7 @@ body {
 .about-container {
     /*background: rgb(45, 45, 55);*/
     min-height: 100vh;
+    margin-top: 80px;
     overflow: hidden;
 }
 
@@ -99,7 +118,7 @@ body {
 }
 .box-wrapper {
     min-height: 100%;
-    top: 80px;
+    top: 120px;
     width: 80%;
     left: 10%;
     align-items: center;
@@ -189,6 +208,7 @@ body {
     margin: 25px 10px;
     border-radius: 25px;
     transition: 0.3s ease 0s;
+    text-decoration: none;
 }
 
 #contact-button:hover {
@@ -231,6 +251,7 @@ body {
 
 .menu-card:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .menu-item-text {
@@ -514,8 +535,74 @@ td:last-child {
 }
 
 .success-page {
-    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    margin: 80px 10px;
+    min-height: calc(100vh - 80px);
+}
+
+.success-message {
     text-align: center;
+    background: white;
+    max-width: 600px;
+    max-height: 300px;
+    margin: 10px auto;
+    padding: 50px 25px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+
+.success-message h1 {
+    color: rgba(239, 35, 60);
+    margin-bottom: 30px;
+}
+
+.success-message .fas {
+    color: rgba(239, 35, 60);
+    height: 40px;
+    font-size: 1.5em;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+}
+
+.popup-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 600px;
+    max-height: 600px;
+    /*background: red;*/
+    overflow: hidden;
+}
+
+.popup-image .fa-solid{
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.popup-image .fa-solid:hover {
+    cursor: pointer;
+}
+
+.popup-image img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
 
 
